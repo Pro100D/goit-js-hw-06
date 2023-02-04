@@ -10,7 +10,7 @@ const refs = {
 
 refs.btnColorChanceEl.addEventListener("click", onBackGraundChenceColor);
 
-function onBackGraundChenceColor(event) {
+function onBackGraundChenceColor() {
   refs.colorBody.style.backgroundColor = getRandomHexColor();
-  refs.spanColorEl.textContent = getRandomHexColor();
+  refs.spanColorEl.textContent = refs.colorBody.style.backgroundColor;
 }

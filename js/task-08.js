@@ -11,9 +11,9 @@ function onFormSubmit(event) {
 	const password = elementsForm.password.value;
 
 	if (elementsForm.email.value === "") {
-		alert("Все поля формы должны быть заполнены");
+		return alert("Все поля формы должны быть заполнены");
 	} else if (elementsForm.password.value === "") {
-		alert("Все поля формы должны быть заполнены");
+		return alert("Все поля формы должны быть заполнены");
 	}
 
 	const formData = { mail, password };
